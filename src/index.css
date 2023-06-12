@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Uncut Sans";
+    src: url("/fonts/Uncut-Sans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fira Code";
+    src: url("/fonts/FiraCode-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Circular Std Book";
+    src: url("/fonts/CircularStd-Book.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "D-DIN Condensed";
+    src: url("/fonts/D-DINCondensed-Bold.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Mark Pro";
+    src: url("/fonts/MarkPro-Heavy.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font-primary: 'Uncut Sans', sans-serif;
+    --font-secondary: 'Fira Code', monospace;
+    --font-circular: 'Circular Std Book', sans-serif;
+    --font-d-din: 'D-DIN Condensed', sans-serif;
+    --font-mark-pro: 'Mark Pro', sans-serif;
+
+    --color-primary: #171E2F;
+    --color-secondary: #10101A;
+    --color-tertiary: #C4C4C4;
+    --color-quaternary: #828282;
+    --color-white: #ffffff;
+    --color-blue: #29B6FB;
+    --color-purple: #D225E1;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-secondary);
+    overflow-x: hidden;
+    background: #10101a;
+    background-size: 400% 400%;
+    scroll-behavior: smooth;
+    transition-timing-function: ease-in-out;
+}
